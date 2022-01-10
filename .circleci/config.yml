@@ -20,7 +20,7 @@ jobs:
           name: Build application Docker image
           command: |
             docker build -t app .
-  images-5:
+  images-7:
     working_directory: /app
     docker:
       - image: docker:17.05.0-ce-git
@@ -46,4 +46,4 @@ workflows:
     build:
         jobs:
              - images-1
-             - images-5
+             - images-7
